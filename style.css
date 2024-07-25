@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 30px;
+}
+
+aside{
+    width: 300px;
+}
+
+main,
+section{
+    display: flex;
+    margin: 0 auto; 
+}
+
+section {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+div{
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px 10px;
+    border: 1px solid #ddd;
+}
+
