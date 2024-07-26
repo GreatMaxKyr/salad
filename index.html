@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Salad Recipe</title>
 </head>
 <body>
     <header>
         <h1>Logo</h1>
+        <div class="SideBlock">
+            <div id="saladButtons">
+                <button id="summerSaladeButton">Summer Salade</button>
+                <button id="newSaladeButton">New Salad</button>
+            </div>
+            <div id="saladCreationControls" style="display: none;">
+                <button id="finishSalad">Finish</button>
+                <button id="cancelSalad">Cancel</button>
+            </div>
+        </div>
     </header>
     <main>
-        <aside>
-            <button>summer salade</button>   
-            <button id="NewSalade">new</button>   
-        </aside>
-        <section>
+        <div id="saladDetails"></div>
+        <section id="vegetableCards"></section>
+        
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2>Enter the name of your new salad:</h2>
+                <input type="text" id="saladNameInput">
+                <button id="confirmSaladName">Confirm</button>
+            </div>
+        </div>
 
-        </section>
+        <div id="weightPopup" class="popup">
+            <div class="popup-content">
+                <span class="closeWeightPopup">&times;</span>
+                <h2 id="weightPopupTitle">Add Vegetable to Recipe</h2>
+                <div class="weight-controls">
+                    <button id="decreaseWeight">-</button>
+                    <input type="text" id="weightInput" readonly>
+                    <button id="increaseWeight">+</button>
+                </div>
+                <button id="addIngredientButton">Add Ingredient</button>
+            </div>
+        </div>
     </main>
-    <footer></footer>
     <script src="script.js"></script>
 </body>
 </html>
